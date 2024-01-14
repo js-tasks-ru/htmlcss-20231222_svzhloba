@@ -1,10 +1,8 @@
 /* Стилизация кнопки */
-@import '../../assets/css/main.css';
-
-button {
-  width: 182px;
+.button {
   height: 48px;
   border-radius: 8px;
+  padding: 0 24px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -12,43 +10,49 @@ button {
   text-align: center;
 }
 
-.button_disabled {
+.button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.button__primary {
+.button_primary {
   color: var(--white);
   background-color: var(--primary);
   border: none;
-  &:hover {
-    background-color:#2342C0;
-  }
-  &:disabled {
-    background-color: var(--primary);
-  }
 }
 
-.button__secondary {
+.button_primary:hover {
+  background-color:#2342C0;
+}
+
+.button_primary:disabled {
+  background-color: var(--primary);
+}
+
+.button_secondary {
   color: var(--white);
   background-color: var(--secondary);
   border: none;
-  &:hover {
-    background-color:#5028C6;
-  }
-  &:disabled {
-    background-color: var(--secondary);
-  }
 }
 
-.button__alternate {
+.button_secondary:hover {
+    background-color:#5028C6;
+  }
+
+.button_secondary:disabled {
+    background-color: var(--secondary);
+  }
+
+.button_alternate {
   border: 1px solid #ACB5BD;
   background-color: var(--white);
   color: var(--grey-4);
-  &:hover {
+}
+
+.button_alternate:hover {
     border-color: var(--black);
   }
-  &:disabled {
+
+.button_alternate:disabled {
     border-color: #ACB5BD;
   }
-}
