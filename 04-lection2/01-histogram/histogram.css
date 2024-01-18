@@ -1,0 +1,82 @@
+.histogram {
+  width: 100%;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+  height: 29px;
+}
+
+.histogram__totaltext {
+  display: inline-block;
+  width: 200px;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.8;
+}
+
+.histogram__filter {
+  display: inline-block;
+  color: var(--blue-2);
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  align-self: flex-end;
+}
+
+.histogram__totalcount {
+  display: inline-block;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.histogram__rectangles {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.histogram__rectangle {
+  background-color: var(--blue-2);
+  flex-grow: 1;
+  border: 2px solid var(--white);
+}
+
+.histogram__rectangle_10 {
+  height: 10px;
+}
+
+.histogram__rectangle_20 {
+  height: 20px;
+}
+
+.histogram__rectangle_30 {
+  height: 30px;
+}
+
+.histogram__rectangle_40 {
+  height: 40px;
+}
+
+.histogram__rectangle_50 {
+  height: 50px;
+}
