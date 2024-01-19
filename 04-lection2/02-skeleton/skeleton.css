@@ -6,17 +6,16 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 24px;
 }
 
-.sceleton__group1 {
+.sceleton__top {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.sceleton__group2, .sceleton__group3 {
+.sceleton__group {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -30,15 +29,15 @@
   background-color: var(--grey-2);
 }
 
-.sceleton_item {
+.sceleton__item {
   height: 20px;
   background-color: var(--grey-2);
 }
 
-.sceleton__group2 .sceleton_item:first-child {
+.sceleton__item_30 {
   width: 30%;
 }
 
-.sceleton__group2 .sceleton_item:last-child {
+.sceleton__item_60 {
   width: 60%;
 }
