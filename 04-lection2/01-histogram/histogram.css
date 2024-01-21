@@ -4,20 +4,23 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 24px;
+  gap: 39px;
+  padding: 16px 24px 24px;
   box-sizing: border-box;
+}
+
+.histogram__top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .histogram__header {
   display: flex;
   justify-content: space-between;
-  height: 29px;
 }
 
 .histogram__totaltext {
-  display: inline-block;
-  width: 200px;
   color: var(--black);
   font-family: Inter;
   font-size: 16px;
@@ -52,31 +55,31 @@
 .histogram__rectangles {
   display: flex;
   align-items: flex-end;
-  height: 100px;
+  height: 50px;
+  gap: 2px;
 }
 
 .histogram__rectangle {
   background-color: var(--blue-2);
   flex-grow: 1;
-  border: 2px solid var(--white);
 }
 
 .histogram__rectangle_10 {
-  height: 10px;
-}
-
-.histogram__rectangle_20 {
-  height: 20px;
+  height: 10%;
 }
 
 .histogram__rectangle_30 {
-  height: 30px;
-}
-
-.histogram__rectangle_40 {
-  height: 40px;
+  height: 30%;
 }
 
 .histogram__rectangle_50 {
-  height: 50px;
+  height: 50%;
+}
+
+.histogram__rectangle_70 {
+  height: 70%;
+}
+
+.histogram__rectangle_100 {
+  height: 100%;
 }
