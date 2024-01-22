@@ -1,5 +1,11 @@
-@import '../fonts/fonts.css';
 @import 'normalize.css';
+@import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/container/container.css';
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -22,4 +28,8 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
 }

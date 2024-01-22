@@ -1,0 +1,10 @@
+.preview {
+  background: #F9FAFC;
+  padding: 56px 0;
+}
+
+.preview__cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
