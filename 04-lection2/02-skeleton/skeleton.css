@@ -1,0 +1,43 @@
+.sceleton {
+  width: 100%;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px 24px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sceleton__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sceleton__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.sceleton__ellipse {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: var(--grey-2);
+}
+
+.sceleton__item {
+  height: 20px;
+  background-color: var(--grey-2);
+}
+
+.sceleton__item_30 {
+  width: 30%;
+}
+
+.sceleton__item_60 {
+  width: 60%;
+}
