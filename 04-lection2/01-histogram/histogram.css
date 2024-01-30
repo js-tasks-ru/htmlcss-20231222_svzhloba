@@ -9,15 +9,19 @@
   box-sizing: border-box;
 }
 
-.histogram__top {
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.histogram__headerLeft {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.histogram__header {
-  display: flex;
-  justify-content: space-between;
+.histogram__headerRight {
+  padding-top: 3px;
 }
 
 .histogram__totaltext {
